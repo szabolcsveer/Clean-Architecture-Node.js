@@ -1,0 +1,25 @@
+{
+    "name": "clean_architecture",
+    "version": "0.0.1",
+    "description": "Sample project to implement Uncle Bob's clean architecture ",
+    "main": "app.js",
+    "scripts": {
+        "start": "node src/frameworks/app.js",
+        "test": "npm test",
+        "tsc": "tsc"
+    },
+    "author": "clairvoyant",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "uuidv4": "^6.2.3"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.8",
+        "@typescript-eslint/eslint-plugin": "^4.1.1",
+        "@typescript-eslint/parser": "^4.1.1",
+        "eslint": "^7.9.0",
+        "eslint-config-airbnb-base": "^14.2.0",
+        "eslint-plugin-import": "^2.22.0"
+    }
+}
