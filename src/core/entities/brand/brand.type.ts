@@ -1,4 +1,4 @@
-export type Brands = {
+export type Brand = {
   id: string;
   name: string;
   productTypes: string[];
