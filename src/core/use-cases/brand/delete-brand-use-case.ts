@@ -8,3 +8,4 @@ export const deleteBrandUseCaseFactory = ({
 }) => async (input: Brand) => {
   return await deleteBrandInterface.removeByID(input.id);
 };
+

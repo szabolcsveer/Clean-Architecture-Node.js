@@ -13,5 +13,5 @@ export const createBrandUseCaseFactory = ({
     riders: input.riders,
   });
 
-  return await postBrandInterface.add(brand);
+  return postBrandInterface.add(brand);
 };

@@ -1,4 +1,3 @@
-export * from './brand/brand.factory';
-export * from './brand/brand.type';
-export * from './brand/interfaces/create-brand';
-
+export * from "./brand/brand.factory";
+export * from "./brand/brand.entity";
+export * from "./brand/interfaces/create-brand";

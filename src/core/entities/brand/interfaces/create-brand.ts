@@ -1,4 +1,4 @@
-import { Brand } from "../brand.type";
+import { Brand } from "../brand.entity";
 export default interface PostBrandInterface {
-  add(item: Brand): Promise<void>;
+  add: (item: any) => {};
 }

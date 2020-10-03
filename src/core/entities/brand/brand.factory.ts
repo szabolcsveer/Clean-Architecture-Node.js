@@ -1,4 +1,4 @@
-import { Brand } from "./brand.type";
+import { Brand } from "./brand.entity";
 import { uuid } from "uuidv4";
 
 export const brandFactory = ({
