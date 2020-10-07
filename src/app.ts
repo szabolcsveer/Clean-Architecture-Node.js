@@ -4,6 +4,7 @@ import morgan from "morgan";
 
 const createBrand = require("./api/brand/create-brand-endpoint");
 const listBrands = require("./api/brand/list-brands-endpoint");
+const getBrandById = require("./api/brand/get-brand-by-id-endpoint");
 
 const PORT = 3000;
 const app: express.Application = express();
@@ -32,6 +33,7 @@ const connection = createConnection({
   .catch((error) => console.log(error));
 
 app.use("/brand", createBrand);
+app.use("/brand/:id", getBrandById);
 app.use("/brand", listBrands);
 
 

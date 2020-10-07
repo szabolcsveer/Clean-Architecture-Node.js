@@ -6,5 +6,5 @@ export const getBrandByIdUseCaseFactory = ({
 }: {
   getBrandByIdInterface: GetBrandByIDInterface;
 }) => async (input: Brand) => {
-  return getBrandByIdInterface.getByID(input.id);
+  return await getBrandByIdInterface.getByID(input.id);
 };
