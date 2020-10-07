@@ -1,3 +1,3 @@
 export interface DeleteBrandInterface {
-  removeByID(id: string): Promise<void>;
+  removeByID(id: string): void;
 }
