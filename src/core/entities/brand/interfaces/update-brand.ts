@@ -1,3 +1,3 @@
 export interface UpdateBrandInterface {
-  updateBrandByID(id: string): Promise<void>;
+  updateBrandByID(id: string, updatedBrand: object): void;
 }

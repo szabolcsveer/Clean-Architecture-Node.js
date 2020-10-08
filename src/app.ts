@@ -11,6 +11,7 @@ const createBrand = require('./api/brand/create-brand-endpoint');
 const listBrands = require('./api/brand/list-brands-endpoint');
 const getBrandById = require('./api/brand/get-brand-by-id-endpoint');
 const deleteBrand = require('./api/brand/delete-brand-endpoint');
+const updateBrand = require('./api/brand/update-brand-endpoint');
 
 const PORT = 3000;
 const app: express.Application = express();
@@ -38,7 +39,7 @@ app.use('/brand', createBrand);
 app.use('/brand', listBrands);
 app.use('/brand/:id', getBrandById);
 app.use('/brand/:id', deleteBrand);
-
+app.use('/brand/:id', updateBrand);
 app.listen(PORT, () => {
   console.log(`App is listening on port: ${PORT}`);
 });

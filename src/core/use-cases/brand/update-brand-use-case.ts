@@ -7,5 +7,5 @@ export const updateBrandUseCaseFactory = ({
   updateBrandInterface: UpdateBrandInterface;
 }) => async (input: Brand) => {
   const { id, name, productTypes, riders } = input;
-  return await updateBrandInterface.updateBrandByID(id);
+  return updateBrandInterface.updateBrandByID(id, {name: name, productTypes: productTypes, riders: riders});
 };
